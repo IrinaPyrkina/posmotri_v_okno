@@ -16,6 +16,8 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  height: 800px;
+  padding-top: 499px;
 }
 
 h1,
@@ -82,6 +84,11 @@ ol {
   color: #fff;
   text-decoration-line: none ;
   transition: background-color 0.6s;
+  outline: none;
+}
+
+.content__card-link:focus {
+  outline: 1px solid #FFFFFF;
 }
 
 .content__card-link:active {
@@ -91,6 +98,7 @@ ol {
 .content__card-link:hover {
   cursor: pointer;
   background-color: #545050;
+  text-decoration: underline;
 }
 
 .content__card-link_current {
@@ -124,7 +132,6 @@ ol {
   color: #fff;
   text-transform: uppercase;
   padding-bottom: 6px;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -208,7 +215,6 @@ ol {
 
 .search-form__pseudo-checkbox {
   display: flex;
-
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
@@ -216,6 +222,11 @@ ol {
   height: 19px;
   border: 1px solid #fff;
   cursor: pointer;
+}
+
+.search-form__pseudo-checkbox:hover {
+  background-color: #545050;
+  border-color: #fff;
 }
 
 .search-form__textfield {
@@ -232,7 +243,6 @@ ol {
   border-style: solid;
   border-color: #FFFFFF;
   color: #FFFFFF;
-  cursor: pointer;
   appearance: none;
 
 }
@@ -306,7 +316,7 @@ ol {
 }
 
 .button:focus {
-  outline: none;
+  outline: 1px solid #FFFFFF;
 }
 
 .button:has(:focus-visible) {
@@ -318,15 +328,22 @@ ol {
   text-decoration: underline;
   text-underline-offset: 1px;
   cursor: pointer;
+  background-color: #545050;
+  color: #fff;
 }
 
 .button:active {
   background-color: #545050;
-  color: #FFFFFF;
+  color: #fff;
+  outline: none; 
 }
 
 .more-button {
-  width: 399px;
+  width: 384px;
+}
+
+.more-button:focus {
+  outline: 1px solid #FFFFFF;
 }
 
 /* .content__details */
